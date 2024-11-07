@@ -182,7 +182,9 @@ function App() {
                     <button onClick={() => IsChildBtn2(i)}>[button 2]</button>
                   </td>
 
-                  {firstref.current}
+                  <td>
+                    {isParent}
+                  </td>
                 </tr>
               )
             })}
