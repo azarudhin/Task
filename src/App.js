@@ -80,7 +80,7 @@ function Row({ row, updateValue, distributeToChildren }) {
           <button onClick={handleDirectValueSet}>Allocation Val</button>
 
         </td>
-        <td>Variance: {variance.toFixed(2)}%</td>
+        <td>{variance.toFixed(2)}%</td>
       </tr>
       {row.children && row.children.map((child) => (
         <Row key={child.id} row={child} updateValue={updateValue} distributeToChildren={distributeToChildren} />
